@@ -3,8 +3,8 @@ var web3  = new web3();
 var web3Admin = require("web3admin");
 web3Admin.extend(web3);//扩展web3模块
 // xxxx为你在infura申请的地址
-web3.setProvider(new web3.providers.HttpProvider("https://ropsten.infura.io/bhkRk7IJ023nMWaG09ov"));
-var aAddress = "0xA12EC2A937Abc1467B2feB668Ad18a0491f04C75";
+web3.setProvider(new web3.providers.HttpProvider("XXXXXX"));
+var aAddress = "XXXX";
 var abiToken = [
     {
         "anonymous": false,
@@ -303,18 +303,18 @@ var abiToken = [
 //获取协议
 var abToken = web3.eth.contract(abiToken).at(aAddress);
 //申请账号
-var account1 = "0x9382b62F56A940aB85aEc37DFfaa3CdCA2b7eF3d";
-var account2 = "0xc4969Fd4ec16f1EA57CDB928455C2Af3347403C7";
+var account1 = "XX";
+var account2 = "XX";
 
 
 var Tx = require('ethereumjs-tx');
-var privateKey = new Buffer('a0e17b9dded10be6ea6cae4bb8e0e39d5e01447131b1258d4e41a4b967f3dff9', 'hex');
+var privateKey = new Buffer('XX', 'hex');
 //从路径获取私匙方法
 //var keythereum = require("keythereum");
 //var datadir = "D:/kaifa/MetaMask Account 1 Private Key";
-//var fromkey = keythereum.importFromFile("0xc4969Fd4ec16f1EA57CDB928455C2Af3347403C7", datadir);
-//var privateKey = keythereum.recover('long150700', fromkey);
-//var transCount = web3.eth.getTransactionCount('0x060394c2d6ca6a98d6c0c06e187516960eaad0da’,‘pending');
+//var fromkey = keythereum.importFromFile("XX", datadir);
+//var privateKey = keythereum.recover('XX', fromkey);
+//var transCount = web3.eth.getTransactionCount('XX’,‘pending');
 
 //var data = contract.transfer.getData(account1, 10000, {from: account2});
 function balance(addr) {
